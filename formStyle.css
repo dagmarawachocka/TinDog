@@ -1,23 +1,19 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    color: rgb(33, 37, 41);
 }
 
+/*NAVBAR*/
 #title {
     background-color: #ff4c68;
     color: #fff;
     position: relative;
-    padding-bottom: 2%;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 40px 14%;
 }
 
-/*Navbar*/
 #navbar-container {
     padding-left: 0;
     padding-right: 0;
-}
-
-.navbar {
-    padding: 0 0 4.5rem;
 }
 
 .navbar-nav {
@@ -33,49 +29,58 @@ body {
 }
 
 .nav-item {
-    padding: 0 0 0 18px;
+    text-align: center;
 }
 
 .nav-link {
     font-weight: 100;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
-/*Navbar end*/
-.form {
-    margin: 35px auto;
+
+/*FORM*/
+#form {
+    margin: 4% 14%;
+}
+
+.container {
+    width: auto;
+    margin: 1% auto;
+}
+
+.data {
+    margin: auto;
 }
 
 h1 {
     text-align: center;
     margin: 35px 0;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    color: rgb(80, 80, 80);
-}
-
-.data {
-    /*margin: 5px;*/
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(33, 37, 41);
 }
 
 .label_name {
     display: block;
     margin: 20px 0 7px 0;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .input_field {
-    background-color: #EEEEEE;
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(143, 143, 143);
     border: 1px solid #DDDDDD;
-    border-radius: 6px;
+    border-radius: 7px;
     margin-bottom: 15px;
     width: 75%;
+    padding: 0.5em;
 }
 
 .input_radio {
     display: none;
 }
+
 
 .input_radio + label {
     padding: 0.5em;
@@ -83,6 +88,7 @@ h1 {
     border: 1px solid #DDDDDD;
     border-radius: 7px;
     transition: all 0.1s ease-in-out;
+    margin-bottom: 15px;
 }
 
 .input_radio:checked + label {
@@ -98,6 +104,7 @@ h1 {
 
 .input_file {
     margin-bottom: 15px;
+    color: rgb(143, 143, 143);
 }
 
 input[type="checkbox"] {
@@ -118,8 +125,10 @@ input[type="checkbox"]:checked + label {
     border-radius: 7px;
 }
 
-.continue_button {
-    width: 150px;
+#continue_button {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
     color: white;
     border-radius: 15px;
     border: none;
@@ -138,6 +147,7 @@ input[type="checkbox"]:checked + label {
 
 .footer_text {
     color: white;
+    margin: 0;
 }
 
 .icon-footer {
