@@ -10,6 +10,7 @@ form.addEventListener("submit", event => {
     printPasswordResult();
     printPhotoInfo();
     printHobbyResult();
+    printBreedResult();
 });
 
 function printNameResults() {
@@ -59,6 +60,16 @@ function printHobbyResult() {
         }
     }
     return console.log(`Hobby: ${hobbyArray}`);
+}
+
+function printBreedResult() {
+    const selectBreed = document.getElementsByTagName("option");
+
+    for (let i = 0; i < selectBreed.length; i++) {
+        if ((selectBreed[i] as HTMLOptionElement).selected) {
+            return console.log(`Rasa: ${(selectBreed[i] as HTMLOptionElement).innerText}`);
+        }
+    }
 }
 
 
