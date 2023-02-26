@@ -8,6 +8,7 @@ form.addEventListener("submit", function (event) {
     printPasswordResult();
     printPhotoInfo();
     printHobbyResult();
+    printBreedResult();
 });
 function printNameResults() {
     var printName = document.getElementById("doggoName").value;
@@ -47,4 +48,13 @@ function printHobbyResult() {
         }
     }
     return console.log("Hobby: ".concat(hobbyArray));
+}
+
+function printBreedResult() {
+    var selectBreed = document.getElementsByTagName("option");
+    for (var i = 0; i < selectBreed.length; i++) {
+        if (selectBreed[i].selected) {
+            return console.log("Rasa: ".concat(selectBreed[i].innerText));
+        }
+    }
 }
